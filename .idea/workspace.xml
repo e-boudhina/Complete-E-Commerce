@@ -136,7 +136,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Complete-Blogging-CMS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -147,7 +147,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Complete-E-Commerce\public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Complete-E-Commerce\public\app" />
       <recent name="C:\xampp\htdocs\Complete-E-Commerce\public\js" />
       <recent name="C:\xampp\htdocs\Complete-E-Commerce\public\css" />
       <recent name="C:\xampp\htdocs\Complete-E-Commerce\resources\views\admin\products" />
@@ -167,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605520740430</updated>
-      <workItem from="1605520741494" duration="17736000" />
+      <workItem from="1605520741494" duration="23936000" />
     </task>
     <servers />
   </component>
@@ -175,10 +179,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="410" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605558823738">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="410" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605558823738" />
+    <state x="690" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605560597024">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="690" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605560597024" />
     <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1605521887119">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605521887119" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605560564684">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605560564684" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

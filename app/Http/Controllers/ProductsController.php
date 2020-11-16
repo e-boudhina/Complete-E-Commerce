@@ -131,8 +131,13 @@ class ProductsController extends Controller
 //        dd(public_path('uploads/products'.$product_M->image));
 
         //Deleting old product image
-        File::delete(public_path('uploads/products/'.$product_M->image));
+        //method 1:
+//     File::delete(public_path('uploads/products/'.$product_M->image));
         //asset also work
+        ////File::delete(asset('uploads/products/'.$product_M->image));
+//      Method 3
+        unlink(public_path('uploads/products/'.$product_M->image));
+        //Method 4: using assessors or mutators in the model, but I don't recommend it
         $product_M->delete();
         session()->flash('success','Product Deleted Successfully');
         return redirect(route('products.index'));
