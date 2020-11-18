@@ -15,5 +15,10 @@ class ProductTableSeeder extends Seeder
     public function run()
     {
         Product_M::factory(5)->create();
+
+        //Custom
+//        Product_M::create([
+//
+//        ]);
     }
 }

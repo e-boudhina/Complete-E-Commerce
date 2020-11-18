@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88a8c027-6ef7-4405-987d-51072f4f1cf6" name="Default Changelist" comment="" />
+    <list default="true" id="88a8c027-6ef7-4405-987d-51072f4f1cf6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/uploads/products/book9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Complete-E-Commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Complete-E-Commerce.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/Product_MFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/Product_MFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/ProductTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/ProductTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -17,6 +37,9 @@
         <option value="Blade" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -126,6 +149,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/hardevine/shoppingcart" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kMqK3iMyOgyU6MTxZFXkksrTkE" />
@@ -136,7 +160,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -147,14 +171,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Complete-E-Commerce\public" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\Complete-E-Commerce\public\app" />
       <recent name="C:\xampp\htdocs\Complete-E-Commerce\public\js" />
       <recent name="C:\xampp\htdocs\Complete-E-Commerce\public\css" />
       <recent name="C:\xampp\htdocs\Complete-E-Commerce\resources\views\admin\products" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Complete-E-Commerce\public\uploads\products" />
+      <recent name="C:\xampp\htdocs\Complete-E-Commerce\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -171,7 +196,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605520740430</updated>
-      <workItem from="1605520741494" duration="23936000" />
+      <workItem from="1605520741494" duration="24719000" />
+      <workItem from="1605604204388" duration="7589000" />
+      <workItem from="1605733291499" duration="1195000" />
     </task>
     <servers />
   </component>
@@ -187,10 +214,11 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="690" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605560597024" />
-    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1605521887119">
+    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1605617623607">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605521887119" />
+    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1038/1920.0.1280.984@0.0.1920.1038" timestamp="1605617623607" />
+    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605604665884" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605560564684">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
