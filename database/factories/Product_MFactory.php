@@ -25,7 +25,7 @@ class Product_MFactory extends Factory
         return [
                 'name' => $this->faker->sentence(2),
                 'image' => 'book1.png',
-                'price' => $this->faker->numberBetween(1,999999.99),
+                'price' => $this->faker->numberBetween(1,99.99),
                 'description' => $this->faker->paragraph(3),
         ];
     }
