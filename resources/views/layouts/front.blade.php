@@ -3,6 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    @yield('meta')
     <title>Seosight - Shop</title>
 
     <link rel="stylesheet" type="text/css" href="{{asset('app/css/fonts.css')}}">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="{{asset('app/css/normalize.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('app/css/grid.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('app/css/styles.css')}}">
+
 
 
     <!--Plugins styles-->
@@ -20,8 +22,13 @@
     <link rel="stylesheet" type="text/css" href="{{asset('app/css/magnific-popup.css')}}">
 
     <!--Styles for RTL-->
+    {{--    Toaster--}}
+    <link href="{{ asset('css/toastr.min.css') }}" rel="stylesheet">
 
     <!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+
+    {{--    Toaster--}}
+    <link href="{{ asset('css/toastr.min.css') }}" rel="stylesheet">
 
     <!--External fonts-->
 
@@ -112,6 +119,20 @@
 <script src="{{asset('app/js/ScrollMagic.min.js')}}"></script>
 <script src="{{asset('app/js/animation.velocity.min.js')}}"></script>
 
+{{--Toaster--}}
+<script src="{{ asset('js/toastr.min.js') }}" ></script>
+
+<script>
+@if(session()->has('success'))
+    toastr.success('{{session()->get('success')}}')
+@elseif(session()->has('info'))
+    toastr.info('{{session()->get('info')}}')
+@elseif(session()->has('error'))
+    toastr.error('{{session()->get('error')}}')
+@endif
+</script>
+{{--Custom script--}}
+@yield('scripts')
 <!-- ...end JS Script -->
 
 

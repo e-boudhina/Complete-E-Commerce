@@ -13,6 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
+
 Route::get('/', 'FrontEndController@index')->name('index');
 Route::get('/product/{product_M}', 'FrontEndController@singleProduct')->name('product.single');
 
@@ -24,7 +28,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('/products', 'ProductsController',['parameters' => ['products'=>'product_M']]);
 
 //Checkout
-Route::get('/cart/checkout', 'shoppingController@cart_checkout')->name('cart.checkout');
+Route::get('/cart/checkout', 'CheckoutController@index')->name('cart.checkout');
+Route::post('/cart/checkout/payment/', 'CheckoutController@store')->name('cart.pay');
+Route::get('/cart/checkout/payment/successful', 'CheckoutController@successfulPayment')->name('payment.successful');
 
 //Add to cart
 Route::post('/cart/add/{product_M}', 'shoppingController@add_to_cart', ['parameters' => ['products'=>'product_M']])->name('cart.add');
@@ -36,5 +42,7 @@ Route::get('/cart/increment/{productId}/{quantity}', 'shoppingController@cart_in
 Route::get('/cart/decrement/{productId}/{quantity}', 'shoppingController@cart_decrement')->name('cart.decrement');
 //Home add to cart route
 Route::get('/cart/add/{product_M}', 'shoppingController@cart_rapid_add', ['parameters' => ['products'=>'product_M']])->name('cart.rapid-add');
-
+//Route::get('/email', function (){
+//    return new \App\Mail\PurchaseSuccessful();
+//});
 

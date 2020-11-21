@@ -76,10 +76,6 @@ class ShoppingController extends Controller
         return redirect()->back();
     }
 
-    //Checkout page
-    public function cart_checkout()
-    {
-    return view('checkout');
-    }
+
 
 }
