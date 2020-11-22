@@ -76,7 +76,7 @@
                                     </tbody>
                                 </table>
 
-                                <div class="cheque">
+                                <div class="cheque align-center">
 
                                     <div class="logos">
                                         <a href="#" class="logos-item">
@@ -92,20 +92,21 @@
                                             <img src="{{asset('app/img/amex.png')}}" alt="Amex">
                                         </a>
                                     </div>
-
-                                    <span >
+                                        <br>
+                                                <div class="align-center">
                                                 <form id="payment-form" class="my-4" method="post" action="{{route('cart.pay')}}">
-
                                                                 @csrf
                                                               <div id="card-element">
                                                               </div>
                                                               <div id="card-errors" role="alert"></div>
-                                                                <button id="submit" class="btn btn-success" >Pay</button>
+                                                                <br>
+                                                                <button id="submit" class="btn btn-dark" style=" background-color: #e7e7e7; color: black;">Pay</button>
 
                                                 </form>
 
+                                                </div>
 
-							        </span>
+
                                 </div>
 
                             </div>
@@ -129,17 +130,12 @@
         // Set up Stripe.js and Elements to use in checkout form
         var style = {
             base: {
-                color: "#32325d",
                 fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-                fontSmoothing: "antialiased",
-                fontSize: "16px",
-                "::placeholder": {
-                    color: "#aab7c4"
-                }
+                fontSize: "20px",
+
             },
             invalid: {
                 color: "#fa755a",
-                iconColor: "#fa755a"
             }
         };
 
@@ -213,8 +209,6 @@
                 }
             });
         });
-
-
 
 
 

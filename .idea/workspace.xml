@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88a8c027-6ef7-4405-987d-51072f4f1cf6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Complete-E-Commerce.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Complete-E-Commerce.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ShoppingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ShoppingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/checkout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/checkout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +184,9 @@
       <workItem from="1605604204388" duration="7589000" />
       <workItem from="1605733291499" duration="3326000" />
       <workItem from="1605871477029" duration="13093000" />
-      <workItem from="1605959192330" duration="18869000" />
+      <workItem from="1605959192330" duration="19734000" />
+      <workItem from="1606041575469" duration="1803000" />
+      <workItem from="1606048142717" duration="3302000" />
     </task>
     <servers />
   </component>
@@ -209,10 +202,10 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="690" y="273" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605560597024" />
-    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1605617623607">
+    <state x="740" y="273" key="FileChooserDialogImpl" timestamp="1606001889966">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1038/1920.0.1280.984@0.0.1920.1038" timestamp="1605617623607" />
+    <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1038/1920.0.1280.984@0.0.1920.1038" timestamp="1606001889966" />
     <state x="740" y="273" key="FileChooserDialogImpl/0.0.1920.1038/1920.48.1280.984/-1024.38.1024.728@0.0.1920.1038" timestamp="1605604665884" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1605886540560">
       <screen x="0" y="0" width="1920" height="1038" />
