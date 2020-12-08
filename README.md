@@ -7,55 +7,70 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# About This Laravel Project:  
+ 
+* php artisan --version 
+=> Laravel Framework 8.14
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This is a simple application that allows administators to perform crud operations on products, in this project it's selling books only where each of them is composed of: <br>
+ An id | A name | A price |  | A product image.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+* Administrators must first register in order to get access and then perform C.R.U.D operations. 
+   
+## This project uses the following external libraries/packages: 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+* https://github.com/CodeSeven/toastr => Toastr for displaying session messages. 
 
-## Learning Laravel
+For the product cart: 
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+* https://github.com/hardevine/LaravelShoppingcart => Maintainted forks.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+* https://stripe.com/ => Stripe API which provides an easy way to make paiments.
 
-## Laravel Sponsors
+Websites Routes:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+* php artisan route:list
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+| Domain | Method    | URI                                   | Name               | Action                                                                 | Middleware |
+|--------|-----------|---------------------------------------|--------------------|------------------------------------------------------------------------|------------|
+|        | GET|HEAD  | /                                     | index              | App\Http\Controllers\FrontEndController@index                          | web        |
+|        | GET|HEAD  | api/user                              |                    | Closure                                                                | api        |
+|        |           |                                       |                    |                                                                        | auth:api   |
+|        | GET|HEAD  | cart                                  | cart               | App\Http\Controllers\shoppingController@cart                           | web        |
+|        | POST      | cart/add/{product_M}                  | cart.add           | App\Http\Controllers\shoppingController@add_to_cart                    | web        |
+|        | GET|HEAD  | cart/add/{product_M}                  | cart.rapid-add     | App\Http\Controllers\shoppingController@cart_rapid_add                 | web        |
+|        | GET|HEAD  | cart/checkout                         | cart.checkout      | App\Http\Controllers\CheckoutController@index                          | web        |
+|        | POST      | cart/checkout/payment                 | cart.pay           | App\Http\Controllers\CheckoutController@store                          | web        |
+|        | GET|HEAD  | cart/checkout/payment/successful      | payment.successful | App\Http\Controllers\CheckoutController@successfulPayment              | web        |
+|        | GET|HEAD  | cart/decrement/{productId}/{quantity} | cart.decrement     | App\Http\Controllers\shoppingController@cart_decrement                 | web        |
+|        | GET|HEAD  | cart/increment/{productId}/{quantity} | cart.increment     | App\Http\Controllers\shoppingController@cart_increment                 | web        |
+|        | GET|HEAD  | cart/{id}                             | cart.delete        | App\Http\Controllers\shoppingController@cart_delete                    | web        |
+|        | GET|HEAD  | home                                  | home               | App\Http\Controllers\HomeController@index                              | web        |
+|        |           |                                       |                    |                                                                        | auth       |
+|        | GET|HEAD  | login                                 | login              | App\Http\Controllers\Auth\LoginController@showLoginForm                | web        |
+|        |           |                                       |                    |                                                                        | guest      |
+|        | POST      | login                                 |                    | App\Http\Controllers\Auth\LoginController@login                        | web        |
+|        |           |                                       |                    |                                                                        | guest      |
+|        | POST      | logout                                | logout             | App\Http\Controllers\Auth\LoginController@logout                       | web        |
+|        | POST      | password/confirm                      |                    | App\Http\Controllers\Auth\ConfirmPasswordController@confirm            | web        |
+|        |           |                                       |                    |                                                                        | auth       |
+|        | GET|HEAD  | password/confirm                      | password.confirm   | App\Http\Controllers\Auth\ConfirmPasswordController@showConfirmForm    | web        |
+|        |           |                                       |                    |                                                                        | auth       |
+|        | POST      | password/email                        | password.email     | App\Http\Controllers\Auth\ForgotPasswordController@sendResetLinkEmail  | web        |
+|        | POST      | password/reset                        | password.update    | App\Http\Controllers\Auth\ResetPasswordController@reset                | web        |
+|        | GET|HEAD  | password/reset                        | password.request   | App\Http\Controllers\Auth\ForgotPasswordController@showLinkRequestForm | web        |
+|        | GET|HEAD  | password/reset/{token}                | password.reset     | App\Http\Controllers\Auth\ResetPasswordController@showResetForm        | web        |
+|        | GET|HEAD  | product/{product_M}                   | product.single     | App\Http\Controllers\FrontEndController@singleProduct                  | web        |
+|        | GET|HEAD  | products                              | products.index     | App\Http\Controllers\ProductsController@index                          | web        |
+|        | POST      | products                              | products.store     | App\Http\Controllers\ProductsController@store                          | web        |
+|        | GET|HEAD  | products/create                       | products.create    | App\Http\Controllers\ProductsController@create                         | web        |
+|        | DELETE    | products/{product_M}                  | products.destroy   | App\Http\Controllers\ProductsController@destroy                        | web        |
+|        | PUT|PATCH | products/{product_M}                  | products.update    | App\Http\Controllers\ProductsController@update                         | web        |
+|        | GET|HEAD  | products/{product_M}                  | products.show      | App\Http\Controllers\ProductsController@show                           | web        |
+|        | GET|HEAD  | products/{product_M}/edit             | products.edit      | App\Http\Controllers\ProductsController@edit                           | web        |
+|        | GET|HEAD  | register                              | register           | App\Http\Controllers\Auth\RegisterController@showRegistrationForm      | web        |
+|        |           |                                       |                    |                                                                        | guest      |
+|        | POST      | register                              |                    | App\Http\Controllers\Auth\RegisterController@register                  | web        |
+|        |           |                                       |                    |                                                                        | guest      |
