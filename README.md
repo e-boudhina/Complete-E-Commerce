@@ -12,8 +12,9 @@
 * php artisan --version 
 => Laravel Framework 8.14
 
-This is a simple application that allows administators to perform crud operations on products, in this project it's selling books only where each of them is composed of: <br>
- An id | A name | A price |  | A product image.
+This is a simple application that allows administators to perform C.R.U.D operations on products.
+In this project it is only about selling books where each of them is composed of: <br>
+ An id | A name | A price | A product image.
 
 * Administrators must first register in order to get access and then perform C.R.U.D operations. 
    
